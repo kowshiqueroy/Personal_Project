@@ -1,4 +1,4 @@
-package de.kai_morich.simple_bluetooth_terminal;
+package de.kush.ChasEbyKuss;
 
 interface SerialListener {
     void onSerialConnect      ();

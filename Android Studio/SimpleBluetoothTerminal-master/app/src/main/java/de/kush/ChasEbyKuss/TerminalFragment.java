@@ -1,4 +1,4 @@
-package de.kai_morich.simple_bluetooth_terminal;
+package de.kush.ChasEbyKuss;
 
 import android.app.Activity;
 import android.app.AlertDialog;

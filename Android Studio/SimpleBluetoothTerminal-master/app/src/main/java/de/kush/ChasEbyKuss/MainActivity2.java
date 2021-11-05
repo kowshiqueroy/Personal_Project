@@ -4,7 +4,7 @@
 
 
 
-package de.kai_morich.simple_bluetooth_terminal;
+package de.kush.ChasEbyKuss;
 
         import android.os.Bundle;
         import androidx.fragment.app.FragmentManager;

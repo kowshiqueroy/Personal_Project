@@ -1,8 +1,6 @@
-package de.kai_morich.simple_bluetooth_terminal;
+package de.kush.ChasEbyKuss;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import androidx.fragment.app.FragmentManager;
 
 import android.content.Intent;
 import android.os.Bundle;
