@@ -1,4 +1,4 @@
-package de.kush.ChasEbyKuss;
+package fyp.kush.ChasEbyKuss;
 
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;

@@ -7,7 +7,7 @@ android {
         minSdkVersion 18
         vectorDrawables.useSupportLibrary true
 
-        applicationId "de.kush.ChasEbyKuss"
+        applicationId "fyp.kush.ChasEbyKuss"
         versionCode 1
         versionName "1.0"
     }

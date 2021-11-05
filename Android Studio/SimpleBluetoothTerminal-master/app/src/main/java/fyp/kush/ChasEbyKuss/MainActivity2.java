@@ -4,7 +4,7 @@
 
 
 
-package de.kush.ChasEbyKuss;
+package fyp.kush.ChasEbyKuss;
 
         import android.os.Bundle;
         import androidx.fragment.app.FragmentManager;

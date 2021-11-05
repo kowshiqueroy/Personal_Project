@@ -1,4 +1,4 @@
-package de.kush.ChasEbyKuss;
+package fyp.kush.ChasEbyKuss;
 
 import androidx.appcompat.app.AppCompatActivity;
 
