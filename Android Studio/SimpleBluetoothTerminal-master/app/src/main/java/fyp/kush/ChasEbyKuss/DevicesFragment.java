@@ -115,7 +115,9 @@ public class DevicesFragment extends ListFragment {
 
     /**
      * sort by name, then address. sort named devices first
-     */
+     */ 
+
+
     static int compareTo(BluetoothDevice a, BluetoothDevice b) {
         boolean aValid = a.getName()!=null && !a.getName().isEmpty();
         boolean bValid = b.getName()!=null && !b.getName().isEmpty();
