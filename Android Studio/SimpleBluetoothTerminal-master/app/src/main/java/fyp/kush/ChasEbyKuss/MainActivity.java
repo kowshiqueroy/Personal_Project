@@ -24,9 +24,8 @@ import fyp.kush.ChasEbyKuss.ui.login.LoginActivity;
 public class MainActivity extends AppCompatActivity {
 
 
-DatabaseReference reff;
-Member member;
-int vari=0;
+
+Button cloudBtn, connect;
 
 
     @Override
@@ -36,10 +35,9 @@ int vari=0;
 
 
 
-        Button cloudBtn=findViewById(R.id.btncloud);
-        Button connect=findViewById(R.id.btnonnect);
-        member= new Member();
-        reff= FirebaseDatabase.getInstance().getReference().child("Member");
+        cloudBtn=findViewById(R.id.btncloud);
+        connect=findViewById(R.id.btnonnect);
+
 
 
 
@@ -57,32 +55,18 @@ int vari=0;
             public void onClick(View view) {
 
 
-                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+
+
+
+
+               Intent intent = new Intent(MainActivity.this, loginActivityManual.class);
                 startActivity(intent);
+                Log.d("TAG", "onClick: ");
 
 
-                member.setName("Kowshique");
-                member.setEmail("Data"+ vari);
-                vari++;
 
 
-                reff.child(member.getEmail()).setValue(member);
-                reff.child(member.getEmail()).child("name").get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
-                    @Override
-                    public void onComplete(@NonNull Task<DataSnapshot> task) {
-                        if (!task.isSuccessful()) {
-                            Log.e("firebase", "Error getting data", task.getException());
-                        }
-                        else {
-                            Log.d("firebase Get Data: ", String.valueOf(task.getResult().getValue()));
-                        }
-                    }
-                });
 
-                //reff.push().setValue(member.getName() + " " + member.getEmail());
-                //reff.push().setValue("Hello");
-                //reff.setValue("Hi");
-                //reff.setValue("Hi2");
 
 
 

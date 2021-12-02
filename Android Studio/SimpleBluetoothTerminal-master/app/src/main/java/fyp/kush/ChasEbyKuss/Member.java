@@ -1,25 +1,26 @@
 package fyp.kush.ChasEbyKuss;
 
-import android.provider.ContactsContract;
+import android.widget.EditText;
 
 public class Member {
-    private  String Name;
-    private String email;
+    private String passdb;
+    private String emaildb;
 
-    public String getName() {
-        return Name;
+
+    public String getPassdb() {
+        return passdb;
     }
 
-    public void setName(String name) {
-        Name = name;
+    public void setPassdb(String passdb) {
+        this.passdb = passdb;
     }
 
-    public String getEmail() {
-        return email;
+    public String getEmaildb() {
+        return emaildb;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setEmaildb(String emaildb) {
+        this.emaildb = emaildb;
     }
 
     public Member() {

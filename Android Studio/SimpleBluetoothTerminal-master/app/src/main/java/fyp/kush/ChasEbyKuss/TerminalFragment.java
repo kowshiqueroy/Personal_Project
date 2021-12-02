@@ -31,7 +31,7 @@ import androidx.fragment.app.Fragment;
 public class TerminalFragment extends Fragment implements ServiceConnection, SerialListener {
 
     private enum Connected { False, Pending, True }
-
+public  static  String info;
     private String deviceAddress;
     private SerialService service;
 
@@ -230,6 +230,7 @@ public class TerminalFragment extends Fragment implements ServiceConnection, Ser
             if(newline.equals(TextUtil.newline_crlf) && msg.length() > 0) {
                 // don't show CR as ^M if directly before LF
                 msg = msg.replace(TextUtil.newline_crlf, TextUtil.newline_lf);
+
                 // special handling if CR and LF come in separate fragments
                 if (pendingNewline && msg.charAt(0) == '\n') {
                     Editable edt = receiveText.getEditableText();
@@ -238,7 +239,8 @@ public class TerminalFragment extends Fragment implements ServiceConnection, Ser
                 }
                 pendingNewline = msg.charAt(msg.length() - 1) == '\r';
             }
-            receiveText.append(TextUtil.toCaretString(msg, newline.length() != 0));
+           receiveText.append(TextUtil.toCaretString(msg, newline.length() != 0));
+            info=msg;
         }
     }
 
