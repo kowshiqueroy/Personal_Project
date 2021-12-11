@@ -5,7 +5,15 @@ import android.widget.EditText;
 public class Member {
     private String passdb;
     private String emaildb;
+    private String datas;
 
+    public String getDatas() {
+        return datas;
+    }
+
+    public void setDatas(String datas) {
+        this.datas = datas;
+    }
 
     public String getPassdb() {
         return passdb;

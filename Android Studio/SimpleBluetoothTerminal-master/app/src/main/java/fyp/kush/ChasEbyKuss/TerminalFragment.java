@@ -15,6 +15,7 @@ import android.text.Spannable;
 import android.text.SpannableStringBuilder;
 import android.text.method.ScrollingMovementMethod;
 import android.text.style.ForegroundColorSpan;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -31,7 +32,7 @@ import androidx.fragment.app.Fragment;
 public class TerminalFragment extends Fragment implements ServiceConnection, SerialListener {
 
     private enum Connected { False, Pending, True }
-public  static  String info;
+public  static  String info="T0 H0";
     private String deviceAddress;
     private SerialService service;
 
@@ -201,6 +202,7 @@ public  static  String info;
             return;
         }
         try {
+            info="";
             String msg;
             byte[] data;
             if(hexEnabled) {
@@ -240,7 +242,8 @@ public  static  String info;
                 pendingNewline = msg.charAt(msg.length() - 1) == '\r';
             }
            receiveText.append(TextUtil.toCaretString(msg, newline.length() != 0));
-            info=msg;
+            info=info+msg;
+            Log.d("blue", "receive: "+info);
         }
     }
 
