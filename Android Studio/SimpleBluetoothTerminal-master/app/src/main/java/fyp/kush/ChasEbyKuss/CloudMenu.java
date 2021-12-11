@@ -295,7 +295,7 @@ public class CloudMenu extends AppCompatActivity {
                 });
 
 
-
+                Log.d("crash1", "onClick: not getting");
 
 
                // t.setText(m);
