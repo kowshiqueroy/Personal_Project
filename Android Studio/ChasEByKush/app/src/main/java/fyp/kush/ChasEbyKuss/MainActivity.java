@@ -32,14 +32,9 @@ Button cloudBtn, connect;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
-
+        
         cloudBtn=findViewById(R.id.btncloud);
         connect=findViewById(R.id.btnonnect);
-
-
-
 
         connect.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,29 +48,13 @@ Button cloudBtn, connect;
         cloudBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                
-
 
                Intent intent = new Intent(MainActivity.this, loginActivityManual.class);
                 startActivity(intent);
                 Log.d("TAG", "onClick: ");
 
-
-
-
-
-
-
-
-
-
             }
         });
-
-
-
-
-
 
     }
 }
