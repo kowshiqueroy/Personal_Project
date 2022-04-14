@@ -23,16 +23,13 @@ import fyp.kush.ChasEbyKuss.ui.login.LoginActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-
-
 Button cloudBtn, connect;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        
+
         cloudBtn=findViewById(R.id.btncloud);
         connect=findViewById(R.id.btnonnect);
 

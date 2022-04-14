@@ -150,22 +150,13 @@ public class loginActivityManual extends AppCompatActivity {
             }
             else {
 
-
                 t.setText("Empty UserName Pass");
             }
-
-
 
             }
         });
 
-
-
-
-
-
     }
-
 
 
     public String myHashMaker(String s) {
