@@ -158,13 +158,7 @@ public class CloudMenu extends AppCompatActivity {
 
                     }
                 });
-
-
-
-
-
-
-
+                
 
 
             }
