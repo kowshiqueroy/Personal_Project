@@ -210,15 +210,13 @@ public class CloudMenu extends AppCompatActivity {
 
                         }
 
-
-
                     }
                 });
 
                 t.setText("Successfully Send");
 
                 Log.d("getDatas", "onClick1: "+reff2.get().toString());
-                
+
 
             }
         });
