@@ -53,10 +53,7 @@ Button cloudBtn, connect;
         cloudBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-
-
-
+                
 
 
                Intent intent = new Intent(MainActivity.this, loginActivityManual.class);
