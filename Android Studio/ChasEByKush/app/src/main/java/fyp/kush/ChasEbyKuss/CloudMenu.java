@@ -218,9 +218,7 @@ public class CloudMenu extends AppCompatActivity {
                 t.setText("Successfully Send");
 
                 Log.d("getDatas", "onClick1: "+reff2.get().toString());
-
-
-
+                
 
             }
         });
@@ -240,7 +238,7 @@ public class CloudMenu extends AppCompatActivity {
                             reff2.setValue(TerminalFragment.info);
                         }
                         else {
-                            
+
                             String b = Objects.requireNonNull(task.getResult().getValue()).toString();
                             Log.d("getDatas", "onClick: "+ b);
                             t.setText(b);
